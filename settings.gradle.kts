@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "face_recognition"
 include(":app")
- 
+include(":face_recognition")
