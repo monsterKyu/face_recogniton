@@ -19,10 +19,10 @@ import com.google.mlkit.vision.face.FaceDetector
 import com.google.mlkit.vision.face.FaceDetectorOptions
 import kotlin.math.abs
 
-internal class FaceAnalyzer (
+internal class FaceAnalyzer(
     lifecycle: Lifecycle,
     private val preview: PreviewView,
-    private val listener: FaceAnalyzerListener
+    private val listener: FaceAnalyzerListener?
 ) : ImageAnalysis.Analyzer{
 
     private var widthScaleFactor = 1F

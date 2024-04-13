@@ -35,17 +35,17 @@ android {
 dependencies {
 
     implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.junit.ktx)
     testImplementation("org.testng:testng:6.9.6")
 
-    val camerax_version = "1.2.1"
+    implementation (libs.androidx.camera.core)
+    implementation (libs.androidx.camera.camera2)
+    implementation (libs.androidx.camera.lifecycle)
 
-    implementation ("androidx.camera:camera-core:${camerax_version}")
-    implementation ("androidx.camera:camera-camera2:${camerax_version}")
-    implementation ("androidx.camera:camera-lifecycle:${camerax_version}")
+    implementation (libs.androidx.camera.view)
+    implementation (libs.androidx.camera.extensions)
 
-    implementation ("androidx.camera:camera-view:${camerax_version}")
-    implementation ("androidx.camera:camera-extensions:${camerax_version}")
-
-    implementation("com.google.mlkit:face-detection:16.1.6")
+    implementation(libs.face.detection)
+    androidTestImplementation("org.testng:testng:6.9.6")
 
 }
