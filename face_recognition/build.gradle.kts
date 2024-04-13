@@ -35,6 +35,7 @@ android {
 dependencies {
 
     implementation(libs.androidx.core.ktx)
+    testImplementation("org.testng:testng:6.9.6")
 
     val camerax_version = "1.2.1"
 
